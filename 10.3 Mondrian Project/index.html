@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
+  <style>
+    /* 
+    Write your CSS here 
+    Gap Colour: #000
+    White: #F0F1EC
+    Red: #E72F24
+    Black: #232629
+    Blue: #004592
+    Yellow: #F9D01E
+
+    For dimensions, see dimensions.png image.
+    HINT: Remember you can't change the properties of grid lines.
+    But grid lines are transparent!
+    */
+    body{
+      display:flex;
+      justify-content: center;
+      align-items: center;
+      height:100vh;
+    }
+    .container{
+      display:grid;
+      grid-template-rows: 414px 140px  155px 20px ;
+      grid-template-columns: 320px 198px 153px 50px;
+      width:748px;
+      height:748px;
+           
+    }
+    
+    .red{
+      background-color:#E72F24;
+      border-bottom:9px solid black;
+      border-right: 9px solid #232629;
+        }
+      .items1{
+        background-color: aliceblue;        
+        border-bottom:9px solid black;
+        grid-column: span 3;
+        
+      }
+      .items2{
+        background-color: aliceblue;        
+        border-right: 9px solid #232629;
+        border-bottom:9px solid black;
+        grid-row: span 3;
+      }
+      .items3{
+        background-color: aliceblue;        
+        border-bottom:9px solid black;
+        border-right: 9px solid #232629;
+        grid-column: span 2;
+        grid-row: span 3;
+
+      }
+      .items4{
+        background-color: aliceblue;
+        grid-area:span 3; 
+         
+      }
+      .items5{
+        background-color: aliceblue;        
+        grid-column:span 1; 
+        border-right:10px solid black;
+
+      }
+    .blue{
+      background-color: #004592;
+      border-bottom:10px solid black;
+      height:130px;
+    }
+    
+    .yellow{
+      background-color:#F9D01E ;
+      
+    }
+    .black{
+      background-color:#232629 ;
+
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Write your HTML here -->
+  <div class="container">
+    <div class="item red">RED</div>
+    <div class="item items1">1</div>     
+    <div class="item items2">2</div>
+    <div class="item items3">3</div>
+    <div class="item blue">BLUE</div>
+    <div class="item items4">4</div>
+    <div class="item items5">5</div>
+    <div class="item yellow">YELLOW</div>
+    <div class="item black">BLACK</div>
+    
+    
+  </div>
+</body>
+
+</html>
